@@ -1,0 +1,63 @@
+body {
+  font-family: "Inter", sans-serif;
+  color: #171321;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.more {
+  display: flex;
+  /* align-items: center; */
+  gap: 4px;
+  font-size: 18px;
+}
+
+.more .arrow {
+  fill: currentColor;
+  display: flex;
+  align-items: center;
+  transition: transform .2s ease-in-out;
+}
+
+.more:hover .text {
+  text-decoration: underline;
+} 
+
+.more:hover .arrow {
+  transform: translateX(6px);
+}
+
+.ad-banner {
+  background-color: #171321;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 9px 0;
+}
+
+.ad-banner img:first-of-type {
+  margin-left: 24px;
+}
+
+.ad-banner p {
+  font-weight: 600;
+}
+
+.ad-banner .more {
+  text-decoration: underline;
+}
+
+.ad-banner img:last-of-type {
+  margin-left: -8px;
+}
