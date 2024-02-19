@@ -6,18 +6,16 @@ body {
   line-height: 1.5;
 }
 
+:where(a, img, span, button, input, svg) {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
 }
 
 button {
   border: none;
   background-color: inherit;
-  cursor: pointer;
-}
-
-img {
-  display: block;
 }
