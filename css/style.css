@@ -393,6 +393,36 @@ section.search {
   background-color: #e4d6ff;
 }
 
+/* BRANDS */
+.brands__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 1170px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.brands__inner :is(.tmobile, .goldman-sachs) {
+  flex: 0 1 90px;
+}
+
+.brands__inner :is(.airbus, .carfax, .nvidia, .ubs) {
+  flex: 0 1 110px;
+}
+
+.brands__inner .lockheed-martin {
+  flex: 0 1 170px;
+}
+
+.brands__inner img {
+  filter: grayscale(100%)
+}
+
+/* PLATFORM */
+
 /* FOOTER */
 footer {
   background-color: #171321;
