@@ -1,25 +1,25 @@
-.more {
+:where(.more) {
   display: flex;
   /* align-items: center; */
   gap: 4px;
 }
 
-.more .arrow {
+:where(.more) :where(.arrow) {
   fill: currentColor;
   display: flex;
   align-items: center;
   transition: transform .2s ease-in-out;
 }
 
-.more:hover .text {
+:where(.more:hover) :where(.text) {
   text-decoration: underline;
 } 
 
-.more:hover .arrow {
+:where(.more:hover) :where(.arrow) {
   transform: translateX(6px);
 }
 
-.btn {
+:where(.btn) {
   padding: 11px 16px;
   cursor: pointer;
   background-color: #171321;
@@ -34,7 +34,7 @@
   line-height: 20px;
 }
 
-.btn:hover {
+:where(.btn:hover) {
   background-color: #fff;
   color: #171321;
 }

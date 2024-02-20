@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/style.css" />
+
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
   <div class="ad-banner">
@@ -311,7 +313,39 @@
       <a href="https://gitlab.com/users/sign_in" title="Sign in">Sign in</a>
     </nav>
   </header>
-  <main></main>
+  <main>
+    <section hidden class="search">
+      <div class="search__left"></div>
+      <div class="search__right">
+        <button class="search__close-button">
+          Close
+          <svg width="16" height="16" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" fill="#171321" xmlns="http://www.w3.org/2000/svg" class="slp-ml-8" data-v-52cd803a=""><path fill-rule="evenodd" clip-rule="evenodd" d="M4.28 3.22a.75.75 0 0 0-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06L8 9.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L9.06 8l3.72-3.72a.75.75 0 0 0-1.06-1.06L8 6.94 4.28 3.22Z"></path></svg>
+        </button>
+        <div class="search__search">
+          <div class="search__searchbar">
+            <input type="text" placeholder="Search" class="search__searchbar-input" />
+            <button class="search__searchbar-reset hidden">
+              <svg width="16" height="16" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" fill="#171321" xmlns="http://www.w3.org/2000/svg" class="be-nav-search-content__input--close"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.28 3.22a.75.75 0 0 0-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06L8 9.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L9.06 8l3.72-3.72a.75.75 0 0 0-1.06-1.06L8 6.94 4.28 3.22Z"></path></svg>
+            </button>
+          </div>
+          <p>
+            To search repositories and projects, login to gitlab.com.
+          </p>
+          <div class="search__search-suggestions">
+            <div class="title">Suggestions</div>
+            <div class="list">
+              <a href="https://about.gitlab.com/gitlab-duo/">GitLab Duo (AI)</a>
+              <a href="https://about.gitlab.com/solutions/code-suggestions/">Code Suggestions (AI)</a>
+              <a href="https://about.gitlab.com/features/continuous-integration/">CI/CD</a>
+              <a href="https://about.gitlab.com/partners/technology-partners/aws/">GitLab on AWS</a>
+              <a href="https://about.gitlab.com/partners/technology-partners/google-cloud-platform/">GitLab on Google Cloud</a>
+              <a href="https://about.gitlab.com/why-gitlab/">Why GitLab?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>
