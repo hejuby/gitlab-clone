@@ -21,3 +21,14 @@ searchReset.addEventListener('click', e => {
   searchInput.value = null;
   searchReset.classList.add('hidden');
 })
+
+const langBtn = document.querySelector('.footer__footer .language__button');
+const langArrowUp = langBtn.querySelector('.arrow-up');
+const langArrowDown = langBtn.querySelector('.arrow-down');
+const langForm = document.querySelector('.footer__footer .language__form');
+
+langBtn.addEventListener('click', () => {
+  langArrowUp.classList.toggle('hidden');
+  langArrowDown.classList.toggle('hidden');
+  langForm.classList.toggle('hidden');
+})

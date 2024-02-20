@@ -15,6 +15,12 @@
   <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/style.css" />
 
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -345,7 +351,145 @@
         </div>
       </div>
     </section>
+    <section class="slider">
+
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="footer__inner">
+      <ul class="footer__list">
+        <li class="logo">
+          <svg width="134" height="32" viewBox="0 0 134 32" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-7737f7b0=""><path d="M57.26 12.62H61.4258C60.7308 8.1943 56.8949 5.1098 51.9034 5.1098C45.997 5.1098 41.5657 9.44842 41.5657 16.7181C41.5657 23.8531 45.7979 28.2809 52.0237 28.2809C57.6127 28.2809 61.6125 24.6906 61.6125 18.8761V16.1668H52.4552V19.359H57.6645C57.5982 22.5741 55.4489 24.6118 52.0631 24.6118C48.2832 24.6118 45.6941 21.7823 45.6941 16.6725C45.6941 11.596 48.3268 8.7768 51.976 8.7768C54.6813 8.7768 56.5318 10.2299 57.26 12.62Z" fill="white"></path><path d="M64.3655 27.97H68.355V11.057H64.3655V27.97ZM66.3779 8.37879C67.6455 8.37879 68.6807 7.40867 68.6807 6.22088C68.6807 5.0331 67.6434 4.05054 66.3779 4.05054C65.1124 4.05054 64.0626 5.02066 64.0626 6.22088C64.0626 7.4211 65.0937 8.37879 66.3779 8.37879Z" fill="white"></path><path d="M80.3004 11.057H76.9582V7.00446H72.9729V11.057H70.5706V14.1436H72.9729V23.5484C72.9501 26.7304 75.2654 28.2933 78.2611 28.2063C79.0595 28.1924 79.8512 28.0582 80.6095 27.8083L79.9373 24.6989C79.5557 24.7974 79.1635 24.8496 78.7693 24.8544C77.7673 24.8544 76.9624 24.502 76.9624 22.8934V14.1436H80.3004V11.057Z" fill="white"></path><path d="M83.3895 27.9699H97.42V24.5455H87.4765V5.41864H83.3895V27.9699Z" fill="white"></path><path d="M105.474 28.312C108.129 28.312 109.716 27.0682 110.442 25.6462H110.567V27.97H114.403V16.6498C114.403 12.1805 110.756 10.8456 107.525 10.8456C103.965 10.8456 101.233 12.4314 100.351 15.5138L104.086 16.0424C104.484 14.8857 105.606 13.8948 107.559 13.8948C109.409 13.8948 110.424 14.8422 110.424 16.5047V16.571C110.424 17.7152 109.222 17.7712 106.235 18.0904C102.951 18.4428 99.8037 19.4233 99.8037 23.2333C99.8079 26.55 102.243 28.312 105.474 28.312ZM106.785 25.383C105.125 25.383 103.93 24.6222 103.93 23.1587C103.93 21.6268 105.264 20.9884 107.042 20.7355C108.09 20.5924 110.183 20.3209 110.702 19.9063V21.8984C110.708 23.7868 109.187 25.383 106.785 25.383Z" fill="white"></path><path d="M117.353 27.9699H121.276V25.3062H121.508C122.131 26.55 123.448 28.2684 126.357 28.2684C130.346 28.2684 133.333 25.1072 133.333 19.5352C133.333 13.8969 130.259 10.829 126.346 10.829C123.359 10.829 122.114 12.622 121.508 13.8451H121.342V5.41864H117.353V27.9699ZM121.265 19.5145C121.265 16.2331 122.676 14.1062 125.245 14.1062C127.9 14.1062 129.267 16.3637 129.267 19.5145C129.267 22.6653 127.877 24.9974 125.245 24.9974C122.697 24.9974 121.265 22.7959 121.265 19.5145Z" fill="white"></path><path d="M32.6927 12.6656L32.647 12.5474L28.1203 0.748383C28.0297 0.516137 27.8668 0.319172 27.6555 0.186622C27.4445 0.0517062 27.1961 -0.0128847 26.946 0.00213248C26.6957 0.0142693 26.4558 0.105532 26.2608 0.262756C26.0658 0.41998 25.9258 0.635038 25.861 0.876905L22.8114 10.2154H10.4468L7.38467 0.876905C7.31922 0.63649 7.17901 0.423073 6.98427 0.267466C6.78824 0.112294 6.54882 0.0217724 6.29909 0.00840475C6.04936 -0.00496289 5.80164 0.059483 5.59014 0.192841C5.37948 0.326054 5.21672 0.522805 5.12543 0.754603L0.600739 12.5474L0.555098 12.6656C-0.096379 14.3666 -0.176704 16.2332 0.326232 17.9838C0.829169 19.7344 1.8881 21.2742 3.34335 22.371L3.35788 22.3814L3.39937 22.4125L10.2933 27.5699L13.7039 30.1486L15.7785 31.7157C16.0217 31.9002 16.3186 32 16.6239 32C16.9292 32 17.2261 31.9002 17.4693 31.7157L19.5439 30.1486L22.9545 27.5699L29.8878 22.3876L29.9065 22.3752C31.362 21.2776 32.4209 19.737 32.9234 17.9856C33.426 16.2342 33.345 14.367 32.6927 12.6656Z" fill="#E24329"></path><path d="M32.6926 12.6656L32.647 12.5474C30.4419 12.9998 28.3641 13.9334 26.5622 15.2816L16.6228 22.7897L22.9545 27.5699L29.8878 22.3876L29.9064 22.3751C31.3619 21.2776 32.4208 19.737 32.9234 17.9856C33.426 16.2342 33.345 14.367 32.6926 12.6656Z" fill="#FC6D26"></path><path d="M10.2932 27.5699L13.7038 30.1486L15.7784 31.7157C16.0216 31.9002 16.3185 32 16.6238 32C16.9291 32 17.2261 31.9002 17.4692 31.7157L19.5438 30.1486L22.9545 27.5699L16.6228 22.7897L10.2932 27.5699Z" fill="#FCA326"></path><path d="M6.68345 15.2816C4.88252 13.9331 2.80532 12.9994 0.600739 12.5474L0.555098 12.6656C-0.096379 14.3666 -0.176704 16.2332 0.326232 17.9838C0.829169 19.7344 1.8881 21.2742 3.34335 22.371L3.35788 22.3814L3.39937 22.4124L10.2933 27.5699L16.6228 22.7897L6.68345 15.2816Z" fill="#FC6D26"></path></svg>
+          <span>®</span>
+        </li>
+        <li class="platform">
+          <div class="title">Platform</div>
+          <a href="https://about.gitlab.com/platform/">DevSecOps platform</a>
+          <div class="title">Pricing</div>
+          <a href="https://about.gitlab.com/pricing/">View plans</a>
+          <a href="https://about.gitlab.com/pricing/premium/">Why Premium?</a>
+          <a href="https://about.gitlab.com/pricing/ultimate/">Why Ultimate?</a>
+        </li>
+        <li class="solutions">
+          <div class="title">Solutions</div>
+          <a href="https://about.gitlab.com/solutions/digital-transformation/">Digital transformation</a>
+          <a href="https://about.gitlab.com/solutions/security-compliance/">Security & Compliance</a>
+          <a href="https://about.gitlab.com/solutions/delivery-automation/">Automated software delivery</a>
+          <a href="https://about.gitlab.com/solutions/agile-delivery/">Agile Delivery</a>
+          <a href="https://about.gitlab.com/solutions/cloud-native/">Cloud transformation</a>
+          <a href="https://about.gitlab.com/solutions/source-code-management/">SCM</a>
+          <a href="https://about.gitlab.com/solutions/continuous-integration/">CI/CD</a>
+          <a href="https://about.gitlab.com/solutions/value-stream-management/">Value stream management</a>
+          <a href="https://about.gitlab.com/solutions/gitops/">GitOps</a>
+          <a href="https://about.gitlab.com/enterprise/">Enterprise</a>
+          <a href="https://about.gitlab.com/small-business/">Small business</a>
+          <a href="https://about.gitlab.com/solutions/startups/">Startups</a>
+          <a href="https://about.gitlab.com/solutions/nonprofit/">Nonprofits</a>
+          <a href="https://about.gitlab.com/solutions/public-sector/">Public sector</a>
+          <a href="https://about.gitlab.com/solutions/education/">Education</a>
+          <a href="https://about.gitlab.com/solutions/finance/">Financial services</a>
+        </li>
+        <li class="resources">
+          <div class="title">Resources</div>
+          <a href="https://about.gitlab.com/install/">Install</a>
+          <a href="https://about.gitlab.com/get-started/">Quick start guides</a>
+          <a href="https://about.gitlab.com/learn/">Learn</a>
+          <a href="https://docs.gitlab.com/">Product documentation</a>
+          <a href="https://about.gitlab.com/blog/">Blog</a>
+          <a href="https://about.gitlab.com/customers/">Customer success stories</a>
+          <a href="https://about.gitlab.com/company/all-remote/">Remote</a>
+          <a href="https://about.gitlab.com/teamops/">TeamOps</a>
+          <a href="https://about.gitlab.com/community/">Community</a>
+          <a href="https://forum.gitlab.com/">Forum</a>
+          <a href="https://about.gitlab.com/events/">Events</a>
+          <a href="https://about.gitlab.com/partners/">Partners</a>
+        </li>
+        <li class="company">
+          <div class="title">Company</div>
+          <a href="https://about.gitlab.com/company/">About</a>
+          <a href="https://about.gitlab.com/jobs/">Jobs</a>
+          <a href="https://about.gitlab.com/company/team/e-group/">Leadership</a>
+          <a href="https://about.gitlab.com/company/team/">Team</a>
+          <a href="https://handbook.gitlab.com/">Handbook</a>
+          <a href="https://ir.gitlab.com/">Investor relations</a>
+          <a href="https://about.gitlab.com/environmental-social-governance/">Environmental, social and governance (ESG)</a>
+          <a href="https://about.gitlab.com/diversity-inclusion-belonging/">Diversity, inclusion and belonging (DIB)</a>
+          <a href="https://about.gitlab.com/security/">Trust Center</a>
+          <a href="https://about.gitlab.com/company/contact/">Newsletter</a>
+          <a href="https://about.gitlab.com/press/">Press</a>
+        </li>
+        <li class="contact-us">
+          <div class="title">Contact us</div>
+          <a href="https://about.gitlab.com/sales/">Contact an expert</a>
+          <a href="https://about.gitlab.com/support/">Get help</a>
+          <a href="https://customers.gitlab.com/customers/sign_in/">Customer portal</a>
+          <a href="https://status.gitlab.com/">Status</a>
+          <a href="https://about.gitlab.com/terms/">Terms of use</a>
+          <a href="https://about.gitlab.com/privacy/">Privacy statement</a>
+          <a href="#">Cookie preferences</a>
+        </li>
+      </ul>
+    </ul>
+    <div class="footer__footer">
+      <ul class="language-and-links">
+        <div class="language">
+          <button class="language__button">
+            <svg width="33" height="33" viewBox="0 0 33 33" fill="currentColor" fill-opacity="0" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_7608_14915)"> <path d="M30.5654 24.1016C28.7549 27.5376 25.7099 30.1601 22.0434 31.4411C18.3769 32.722 14.3613 32.5662 10.805 31.0051C7.24876 29.444 4.41605 26.5934 2.87726 23.0274C1.33847 19.4615 1.20789 15.4449 2.5118 11.7865" stroke="currentColor" stroke-width="1.27982" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3.58327 9.42213C5.4503 6.05539 8.51369 3.51263 12.1667 2.2975C15.8196 1.08238 19.7958 1.28353 23.3075 2.86109C26.8192 4.43866 29.6103 7.27759 31.128 10.8156C32.6458 14.3535 32.7794 18.3325 31.5024 21.9643" stroke="currentColor" stroke-width="1.27982" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15.7845 32.078C13.3517 30.3461 11.371 28.0545 10.0096 25.3965C8.64808 22.7386 7.94573 19.7922 7.96172 16.8059C7.97772 13.8196 8.7116 10.8809 10.1015 8.23766C11.4913 5.59445 13.4964 3.32421 15.9477 1.61841" stroke="currentColor" stroke-width="1.27982" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M18.2015 32.078C20.6344 30.3461 22.615 28.0545 23.9765 25.3965C25.338 22.7386 26.0403 19.7922 26.0243 16.8059C26.0083 13.8196 25.2744 10.8809 23.8846 8.23766C22.4947 5.59445 20.4896 3.32421 18.0384 1.61841" stroke="currentColor" stroke-width="1.27982" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16.992 1.54803V32.2636" stroke="currentColor" stroke-width="1.27982" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2.6774 11.7865H31.3197" stroke="currentColor" stroke-width="1.27982" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2.6774 22.0251H31.3197" stroke="currentColor" stroke-width="1.27982" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_7608_14915"> <rect width="31.9954" height="31.9954" fill="white" transform="translate(0.995361 0.908081)"></rect> </clipPath> </defs> </svg>
+            <span> Language: English </span>
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="arrow-up"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.22 6.22a.75.75 0 011.06 0L8 8.94l2.72-2.72a.75.75 0 111.06 1.06l-3.25 3.25a.75.75 0 01-1.06 0L4.22 7.28a.75.75 0 010-1.06z"></path></svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="arrow-down hidden"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.22 9.78a.75.75 0 001.06 0L8 7.06l2.72 2.72a.75.75 0 101.06-1.06L8.53 5.47a.75.75 0 00-1.06 0L4.22 8.72a.75.75 0 000 1.06z"></path></svg>
+          </button>
+          <div class="language__form hidden">
+            <button>
+              <span>English</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.78 4.62a.75.75 0 010 1.06l-6.097 6.097a.75.75 0 01-1.069-.009L3.211 9.284a.75.75 0 111.078-1.043l1.873 1.936L11.72 4.62a.75.75 0 011.06 0z"></path></svg>
+            </button>
+            <button>
+              <span>Français</span>
+            </button>
+            <button>
+              <span>Deutsch</span>
+            </button>
+            <button>
+              <span>日本語</span>
+            </button>
+          </div>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="https://twitter.com/gitlab">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social__links--icon" data-v-db4b02a6=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/gitlab">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="social__links--icon" data-v-db4b02a6=""><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCnMGQ8QHMAnVIsI3xJrihhg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="social__links--icon" data-v-db4b02a6=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/gitlab-com">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social__links--icon" data-v-db4b02a6=""><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a>
+          </li>
+        </ul>
+      </ul>
+      <div class="footer__horizontal-bar"></div>
+      <div class="license">
+        <p>Git is a trademark of Software Freedom Conservancy and our use of 'GitLab' is under license</p>
+        <ul class="license__links">
+          <li>
+            <a href="https://gitlab.com/gitlab-com/marketing/digital-experience/buyer-experience">View page source</a>
+          </li>
+          <li>
+            <a href="https://gitlab.com/gitlab-com/marketing/digital-experience/buyer-experience/-/blob/main/CONTRIBUTING.md">Please contribute</a>
+          </li>
+        </ul>
+        <p>© 2024 GitLab B.V.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
