@@ -38,3 +38,7 @@
   background-color: #fff;
   color: #171321;
 }
+
+:where(.inner) {
+  max-width: 1170px;
+}

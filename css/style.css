@@ -292,7 +292,7 @@ section.search {
   left: 0;
   width: 100%;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.4;
   padding-top: 50px;
 }
 
@@ -395,30 +395,29 @@ section.search {
 }
 
 /* BRANDS */
-.brands__inner {
+.brands .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  max-width: 1170px;
   margin: 0 auto 112px auto;
   left: 0;
   right: 0;
 }
 
-.brands__inner :is(.tmobile, .goldman-sachs) {
+.brands .inner :is(.tmobile, .goldman-sachs) {
   flex: 0 1 90px;
 }
 
-.brands__inner :is(.airbus, .carfax, .nvidia, .ubs) {
+.brands .inner :is(.airbus, .carfax, .nvidia, .ubs) {
   flex: 0 1 110px;
 }
 
-.brands__inner .lockheed-martin {
+.brands .inner .lockheed-martin {
   flex: 0 1 170px;
 }
 
-.brands__inner img {
+.brands .inner img {
   filter: grayscale(100%);
   position: relative;
   z-index: -1;
@@ -426,11 +425,13 @@ section.search {
 
 /* PLATFORM */
 section.platform {
-  max-width: 1170px;
+  line-height: 1.2;
+}
+
+section.platform .inner {
   margin: 0 auto;
   left: 0;
   right: 0;
-  line-height: 1.2;
 }
 
 .platform__top {
@@ -505,6 +506,132 @@ section.platform {
   text-decoration: underline;
 }
 
+/* SAVING */
+section.saving {
+  position: relative;
+}
+
+section.saving::before {
+  content: "";
+  width: 100vw;
+  height: 96px;
+  position: absolute;
+  background-color: #171321;
+  left: 0;
+  bottom: 0;
+}
+
+.saving .inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+:is(.saving__story, .saving__calculator, .saving__resources) {
+  background-color: #f6f3fe;
+  padding: 32px;
+}
+
+.saving__story {
+  grid-row: 1 / 3;
+  border-radius: 8px 0 0 8px;
+}
+
+.saving__calculator {
+  border-radius: 0 8px 0 0;
+}
+
+.saving__resources {
+  border-radius: 0 0 90px 0;
+}
+
+.saving .inner h3 {
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.saving .inner > div > svg {
+  width: 32px;
+  height: 32px;
+  color: #74717a;
+}
+
+.saving__story h3 {
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.6px;
+}
+
+.saving .inner > :not(.saving__story) h3 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.saving__story h3 a {
+  display: inline;
+  color: #7759c2;
+}
+
+.saving__story h3 a:hover {
+  text-decoration: underline;
+}
+
+.saving__story .feature-pills {
+  display: grid;
+  width: fit-content;
+}
+
+.saving__story :is(.feature-pills__top, .feature-pills__bottom) {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  padding: 8px 36px 8px 12px;
+  border-radius: 90px;
+  margin-top: 16px;
+}
+
+.saving__story .feature-pills svg {
+  width: 24px;
+  height: 24px;
+}
+
+.saving__story .feature-pills strong {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.saving__story .feature-pills span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.saving__story .more {
+  margin-top: 48px;
+}
+
+.saving .inner > :not(.saving__story) .more {
+  margin-top: 16px;
+}
+
+.saving .inner .more {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.saving .inner .more svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* FOOTER */
 footer {
   background-color: #171321;
@@ -512,8 +639,7 @@ footer {
   font-size: 14px;
 }
 
-.footer__inner {
-  max-width: 1170px;
+footer .inner {
   margin: 0 auto;
   left: 0;
   right: 0;
