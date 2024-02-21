@@ -4,7 +4,6 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  height: 3000px;
 }
 
 :where(a, img, span, button, input, svg) {
@@ -18,6 +17,10 @@ body {
 :where(a) {
   text-decoration: none;
   color: inherit;
+}
+
+:where(strong) {
+  font-weight: inherit;
 }
 
 :where(button) {
@@ -36,4 +39,12 @@ body {
 
 :where(.hidden) {
   display: none;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p) > a {
+  display: inline;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p) > a:hover {
+  text-decoration: underline;
 }

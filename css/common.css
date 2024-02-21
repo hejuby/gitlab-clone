@@ -45,3 +45,22 @@
   left: 0;
   right: 0;
 }
+
+:where(.feature-pills) {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+:where(.feature-pills__top, .feature-pills__bottom) {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 90px;
+}
+
+:where(.feature-pills span) {
+  font-size: 14px;
+  line-height: 1.4;
+}

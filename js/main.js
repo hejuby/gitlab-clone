@@ -32,3 +32,13 @@ langBtn.addEventListener('click', () => {
   langArrowDown.classList.toggle('hidden');
   langForm.classList.toggle('hidden');
 })
+
+const caseTabBtns = document.querySelectorAll('.case__tabs button');
+caseTabBtns.forEach((button) => {
+  button.addEventListener('click', () => {
+    caseTabBtns.forEach((each) => {
+      each.classList.remove('selected')
+    });
+    button.classList.add('selected');
+  });
+});
