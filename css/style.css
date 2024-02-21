@@ -303,6 +303,7 @@ section.search {
 }
 
 .search__right {
+  background-color: #fff;
   flex-grow: 2.42;
   flex-basis: 0;
   display: flex;
@@ -400,7 +401,7 @@ section.search {
   justify-content: space-between;
   gap: 16px;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 112px auto;
   left: 0;
   right: 0;
 }
@@ -418,10 +419,91 @@ section.search {
 }
 
 .brands__inner img {
-  filter: grayscale(100%)
+  filter: grayscale(100%);
+  position: relative;
+  z-index: -1;
 }
 
 /* PLATFORM */
+section.platform {
+  max-width: 1170px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  line-height: 1.2;
+}
+
+.platform__top {
+  display: flex;
+  gap: 96px;
+}
+
+.platform__title {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-self: center;
+}
+
+.platform__hero {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.platform__title h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.platform__title p {
+  font-size: 20px;
+  margin: 24px 0;
+}
+
+.platform__buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.platform__buttons .more {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.platform__buttons .more svg {
+  width: 20px;
+  height: 20px;
+}
+
+.platform__bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  column-gap: 32px;
+  margin: 64px 0 160px;
+}
+
+.platform__bottom h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.platform__bottom li > :is(svg, h4) {
+  margin-bottom: 8px;
+}
+
+.platform__bottom li svg {
+  width: 32px;
+  height: 32px;
+}
+
+.platform__bottom a {
+  display: inline;
+  color: #7759c2;
+}
+
+.platform__bottom a:hover {
+  text-decoration: underline;
+}
 
 /* FOOTER */
 footer {

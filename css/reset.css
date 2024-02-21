@@ -30,6 +30,10 @@ body {
   padding: 0;
 }
 
+:where(svg) {
+  fill: inherit;
+}
+
 :where([hidden]) {
   visibility: hidden;
 }

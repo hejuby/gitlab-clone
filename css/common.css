@@ -1,6 +1,6 @@
 :where(.more) {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   gap: 4px;
 }
 
@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   font-size: 18px;
-  font-weight: 550;
+  font-weight: 500;
   border: 1px solid #171321;
   border-radius: 4px;
   transition: background-color .1s ease-in-out;
