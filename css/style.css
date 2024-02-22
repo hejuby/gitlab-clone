@@ -8,7 +8,7 @@
   gap: 24px;
   padding: 9px 0;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .ad-banner img:first-of-type {
@@ -39,7 +39,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* HEADER LEFT */
@@ -294,7 +294,7 @@ section.search {
   font-size: 14px;
   line-height: 1.4;
   padding-top: 50px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .search__left {
@@ -501,11 +501,11 @@ section.saving {
 section.saving::before {
   content: "";
   width: 100vw;
-  height: 96px;
+  height: 97px;
   position: absolute;
   background-color: #171321;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .saving .inner {
@@ -959,10 +959,10 @@ section.get-started {
 section.get-started::before {
   content: "";
   width: 100%;
-  height: 286px;
+  height: 287px;
   background-color: #171321;
   position: absolute;
-  bottom: -72px;
+  bottom: -73px;
 }
 
 section.get-started .inner {

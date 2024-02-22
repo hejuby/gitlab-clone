@@ -42,3 +42,20 @@ caseTabBtns.forEach((button) => {
     button.classList.add('selected');
   });
 });
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  freeMode: true,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  slidesPerGroup: 2,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
