@@ -1,4 +1,8 @@
 /* SLIDER */
+section.slider {
+  position: relative;
+}
+
 section.slider h1 {
   font-size: 50px;
   font-weight: 500;
@@ -145,6 +149,7 @@ section.slider .more {
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: inherit;
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {

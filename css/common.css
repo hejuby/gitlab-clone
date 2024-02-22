@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  font-family: inherit;
 }
 
 :where(.more) :where(.arrow) {
@@ -26,6 +27,7 @@
   color: #fff;
   display: flex;
   align-items: center;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 500;
   border: 1px solid #171321;
