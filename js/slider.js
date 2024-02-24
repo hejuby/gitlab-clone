@@ -115,7 +115,6 @@ update();
 // };
 
 prevBtn.addEventListener('click', () => {
-  // scrollInterval(40, false, 30, maxScroll/2);
   slider.style.scrollBehavior = 'smooth';
   slider.scrollLeft -= maxScroll/2;
   target -= maxScroll/2;
@@ -128,7 +127,6 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-  // scrollInterval(40, true, 30, maxScroll/2);
   slider.style.scrollBehavior = 'smooth';
   slider.scrollLeft += maxScroll/2;
   target += maxScroll/2;
