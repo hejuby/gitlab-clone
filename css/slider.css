@@ -66,10 +66,6 @@ section.slider .more {
   background: linear-gradient(176deg,hsla(0,0%,100%,.75),hsla(0,0%,100%,.4));
 }
 
-.hero-card {
-  /* pointer-events: none; */
-}
-
 .hero-card h2 {
   font-size: 24px;
   font-weight: 500;
