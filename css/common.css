@@ -12,6 +12,11 @@
   transition: transform .2s ease-in-out;
 }
 
+:where(.more) :where(.arrow) :where(svg) {
+  width: 16px;
+  height: 16px;
+}
+
 :where(.more:hover) :where(.text) {
   text-decoration: underline;
 } 

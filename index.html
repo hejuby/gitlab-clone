@@ -14,13 +14,12 @@
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/common.css" />
   <link rel="stylesheet" href="./css/style.css" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <script src="./js/swiper.js"></script>
-
   <link rel="stylesheet" href="./css/slider.css" />
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script defer src="./js/main.js"></script>
+  <script defer src="./js/slider.js"></script>
 </head>
 <body>
   <div class="ad-banner">
@@ -466,13 +465,15 @@
         </div>
       </div>
       <div class="slider__navigation">
-        <div class="swiper-button-prev">
+        <button class="swiper-button-prev disabled">
           <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.841 5.28a.75.75 0 00-1.06-1.06L1.53 7.47 1 8l.53.53 3.25 3.25a.75.75 0 001.061-1.06l-1.97-1.97H14.25a.75.75 0 000-1.5H3.871l1.97-1.97z"></path></svg>
+        </button>
+        <div class="swiper-scrollbar-wrapper">
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-button-next">
+        <button class="swiper-button-next">
           <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path></svg>
-        </div>
+        </button>
       </div>
     </section>
     <section class="brands">
@@ -1338,11 +1339,13 @@
           </li>
           <li>
             <a href="https://www.youtube.com/channel/UCnMGQ8QHMAnVIsI3xJrihhg">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="social__links--icon" data-v-db4b02a6=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="social__links--icon" data-v-db4b02a6=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+            </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/company/gitlab-com">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social__links--icon" data-v-db4b02a6=""><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="social__links--icon" data-v-db4b02a6=""><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+            </a>
           </li>
         </ul>
       </ul>

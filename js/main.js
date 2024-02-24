@@ -68,22 +68,4 @@ langBtn.addEventListener('click', () => {
   langArrowUp.classList.toggle('hidden');
   langArrowDown.classList.toggle('hidden');
   langForm.classList.toggle('hidden');
-})
-
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  freeMode: true,
-  grabCursor: true,
-  slidesPerView: 'auto',
-  slidesPerGroup: 1,
-  speed: 600,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
