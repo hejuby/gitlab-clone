@@ -22,11 +22,13 @@ KDT8-M1
 2. CSS를 사용한 헤더 드롭다운 메뉴를 구현하였습니다.
 ![Header](./images/markdown/header.png)
 3. ```position: fixed;``` 및 ```z-index```를 활용하여 화면 전체를 덮는 검색탭을 구현하였습니다.
-  3-1. 자바스크립트를 통해 검색창 ```input``` 요소와의 상호작용을 구현하였습니다.
+  - ```input``` 요소와의 상호작용
 ![Search](./images/markdown/search.png)
-4. ```:hover```를 이용한 버튼 또는 링크 호버 애니메이션 효과를 구현하였습니다.
+4. ```:hover```를 이용한 버튼 호버 효과를 구현하였습니다.
 ![Hover](./images/markdown/hover.png)
 5. ```transition```을 활용한 탭 스위칭 및 애니메이션 효과를 구현하였습니다.
+  - ```scaleX```, ```translateY``` 애니메이션
+  - 요소의 ```classList``` 조작 
 ![Tabs](./images/markdown/tabs.png)
 6. 가상 요소를 활용해 섹션 일부분을 덮는 배경 요소를 구현하였습니다.
 ![PseudoElement](./images/markdown/pseudo-element.png)
@@ -34,12 +36,13 @@ KDT8-M1
 ![Grid1](./images/markdown/grid1.png)
 ![Grid2](./images/markdown/grid2.png)
 8. 자바스크립트를 이용한 슬라이더 기능을 구현하였습니다.
-  8-1. 마우스 휠을 이용해 좌우 이동
-  8-2. 마우스 이벤트를 활용한 드래그 이동
-    - ```mousemove``` 이벤트 시 변화값을 요소의 ```scrollLeft``에 적용
-  8-3. 버튼을 이용해 전체 슬라이더의 일정 비율 이동
+  - 마우스 휠을 이용해 좌우 이동
+    - ```wheel``` 이벤트를 활용해 휠 사용 시에도 스크롤 변화값 탐지
+  - 마우스 이벤트를 활용한 드래그 이동
+    - ```mousemove``` 이벤트 시 변화값을 요소의 ```scrollLeft```에 적용
+  - 버튼을 이용해 전체 슬라이더의 일정 비율 이동
     - 슬라이더 컨테이너 전체 너비의 절반 만큼 요소의 ```scrollLeft```에 적용
-  8-4. <a href="https://gsap.com/" target="_blank">GSAP</a>을 활용한 네비게이션 바 구현
+  - <a href="https://gsap.com/" target="_blank">GSAP</a>을 활용한 네비게이션 바 구현
     - 스크롤 변화값에 비례하여 네비게이션 요소에 ```scaleX``` 적용
   ![Navigation1](./images/markdown/navigation1.png)
   ![Navigation2](./images/markdown/navigation2.png)
