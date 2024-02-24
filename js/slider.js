@@ -19,6 +19,7 @@ const lerp = (start, end, factor) => {
 
 const update = () => {
   current = lerp(current, target, ease);
+  console.log(current);
   if (current < 1) current = 0;
   if (current > maxScroll - 1) current = maxScroll; 
 
@@ -45,7 +46,6 @@ slider.addEventListener('mousedown', e => {
   pressed = true;
   mouseX = e.clientX;
   slider.style.cursor = 'grabbing';
-  console.log('mousedown');
 });
 
 slider.addEventListener('mouseleave', e => {
@@ -55,7 +55,6 @@ slider.addEventListener('mouseleave', e => {
 slider.addEventListener('mouseup', e => {
   pressed = false;
   slider.style.cursor = 'grab';
-  console.log('mouseup');
   heroCards.forEach((card) => {
     card.style.pointerEvents = 'auto';
   });
