@@ -40,7 +40,6 @@ section.slider .more {
   width: max-content;
   height: 100%;
   display: flex;
-  align-items: center;
 }
 
 .swiper-slide:has([class^="slider__"]:not(.slider__hero-img)) {
