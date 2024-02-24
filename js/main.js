@@ -43,13 +43,18 @@ devOpsBtns.forEach((btn, index) => {
 
 // Case Studies
 const caseTabBtns = document.querySelectorAll('.case__tabs button');
+const caseContents = document.querySelectorAll('section.case-studies .inner > div');
 
-caseTabBtns.forEach((button) => {
-  button.addEventListener('click', () => {
+caseTabBtns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
     caseTabBtns.forEach((each) => {
       each.classList.remove('selected')
     });
-    button.classList.add('selected');
+    btn.classList.add('selected');
+    caseContents.forEach((content) => {
+      content.classList.remove('active');
+    });
+    caseContents[index].classList.add('active');
   });
 });
 

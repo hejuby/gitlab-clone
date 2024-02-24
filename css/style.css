@@ -689,11 +689,6 @@ section.devsecops .inner > p {
   transform: translateY(0);
 }
 
-.devsecops__card.active svg {
-  fill: currentColor;
-  color: inherit;
-}
-
 .devsecops__content-left {
   flex-grow: 1;
   flex-basis: 0;
@@ -728,7 +723,7 @@ section.devsecops .inner > p {
 .devsecops__content-left .links li > svg {
   width: 32px;
   height: 32px;
-  color: #a989f5
+  color: #a989f5;
 }
 
 .devsecops__content-right img {
@@ -853,6 +848,20 @@ section.case-studies .inner > :not(.case__tabs) {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  width: 0;
+  height: 0;
+  transition: transform .5s linear, opacity .3s ease;
+}
+
+section.case-studies .inner > :not(.case__tabs).active {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
 }
 
 .case__left {
@@ -900,6 +909,10 @@ section.case-studies .inner > :not(.case__tabs) {
   line-height: 1.1;
 }
 
+.case__singleron .case__left .more {
+  margin-top: 48px;
+}
+
 .case__right .quote {
   background-color: #f6f3fe;
   padding: 48px;
@@ -927,6 +940,7 @@ section.case-studies .inner > :not(.case__tabs) {
   width: 154px;
   right: -40px;
   bottom: -32px;
+  border-radius: 4.4px 4.4px 60px 4.4px;
 }
 
 /* RECOGNITION */
