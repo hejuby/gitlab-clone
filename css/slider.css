@@ -149,12 +149,28 @@ section.slider .more {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: inherit;
+  z-index: 1;
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
+  margin-top: -1px;
   width: 335px;
   height: 2px;
+  background-color: #fff;
+}
+
+.swiper-scrollbar-drag {
+  transform-origin: left;
+  background-color: #171717;
+}
+
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+  fill: #fff;
+}
+
+.swiper-button-next.swiper-button-disabled {
+  opacity: 1;
 }
 
 .swiper-button-prev svg,

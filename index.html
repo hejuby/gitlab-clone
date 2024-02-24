@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./css/style.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
 
   <link rel="stylesheet" href="./css/slider.css" />
 
@@ -633,12 +633,12 @@
         <p>From planning to production, GitLab brings your team together</p>
         <ul class="devsecops__buttons">
           <li>
-            <button class="development">
+            <button class="development selected">
               Development
             </button>
           </li>
           <li>
-            <button class="security selected">
+            <button class="security">
               Security
             </button>
           </li>
@@ -648,7 +648,118 @@
             </button>
           </li>
         </ul>
-        <div class="devsecops__security">
+        <div class="devsecops__development devsecops__card active">
+          <div class="devsecops__content-left">
+            <p>Automated tasks improve efficiency and free up developers’ time — without sacrificing security.</p>
+            <ul class="links">
+              <li>
+                <svg viewBox="0 0 32 32" fill="currentColor" fill-opacity="0" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_7608_14913)" stroke="currentColor" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><path d="M18.238 21.667a1.146 1.146 0 01.928 0l1.206.563a7.529 7.529 0 001.625-1.626l-.56-1.19a1.149 1.149 0 01.64-1.564l1.251-.455c.12-.76.12-1.536 0-2.297l-1.25-.448a1.148 1.148 0 01-.64-1.561L22 11.882a7.529 7.529 0 00-1.626-1.625l-1.212.554a1.148 1.148 0 01-1.565-.64l-.454-1.251a7.375 7.375 0 00-2.298 0l-.447 1.25a1.15 1.15 0 01-1.562.64l-1.206-.563a7.45 7.45 0 00-1.6 1.581m.554 2.182a1.151 1.151 0 01-.666.64l-1.25.454a7.474 7.474 0 000 2.298l1.25.448a1.15 1.15 0 01.64 1.561l-.563 1.206a7.528 7.528 0 001.625 1.626l1.213-.554a1.15 1.15 0 011.565.64l.454 1.251c.76.12 1.536.12 2.297 0m-3.583-7.33a2.432 2.432 0 114.863 0 2.432 2.432 0 01-4.863 0zm15.45-.64v.64a13.025 13.025 0 01-7.36 11.733M16 3.218a13.041 13.041 0 0111.945 7.807M2.997 17.11a13.029 13.029 0 017.33-12.587M16 29.282a13.035 13.035 0 01-12.075-8.124"></path><path d="M17.166.892l-2.328 2.33 2.328 2.33m-2.328 26.064l2.328-2.33-2.328-2.33m16.527-9.541l-2.33-2.327-2.33 2.327M.641 15.088l2.33 2.327 2.33-2.327"></path></g><defs><clipPath id="clip0_7608_14913"><path fill="#fff" transform="translate(0 .252)" d="M0 0h31.995v31.995H0z"></path></clipPath></defs>
+                </svg>
+                <a href="https://about.gitlab.com/features/continuous-integration/" class="more">
+                  <div class="text">
+                    Continuous integration and delivery
+                  </div>
+                  <div class="arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path></svg>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-opacity="0" d="M16.6596 9.4137H32.3192V29.3491C32.3192 31.006 30.976 32.3491 29.3192 32.3491H1V11.4374" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> <path fill-opacity="0" d="M10.5998 24.3217L7.12744 20.8814L10.5998 17.441" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> <path fill-opacity="0" d="M22.7192 17.441L26.1916 20.8814L22.7192 24.3217" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> <path fill-opacity="0" d="M19.2603 15.7276L14.0586 26.0351" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> <path d="M5.03035 1.06244L5.72482 2.77586C5.83376 3.05918 6.06524 3.28853 6.3512 3.39646L8.08056 4.08453C8.63886 4.30039 8.63886 5.09638 8.08056 5.31225L6.3512 6.00031C6.06524 6.10824 5.83376 6.3376 5.72482 6.62092L5.03035 8.33433C4.81248 8.88748 4.00907 8.88748 3.7912 8.33433L3.09673 6.62092C2.9878 6.3376 2.75631 6.10824 2.47035 6.00031L0.740989 5.31225C0.182691 5.09638 0.182691 4.30039 0.740989 4.08453L2.47035 3.39646C2.75631 3.28853 2.9878 3.05918 3.09673 2.77586L3.7912 1.06244C4.00907 0.509296 4.81248 0.509296 5.03035 1.06244Z" fill="currentColor"></path> <path d="M11.7032 6.94483L12.1662 8.07811C12.2479 8.26699 12.3977 8.4154 12.5883 8.49635L13.7321 8.95506C14.0998 9.10346 14.0998 9.62963 13.7321 9.77803L12.5883 10.2367C12.3977 10.3177 12.2479 10.4661 12.1662 10.655L11.7032 11.7883C11.5534 12.1525 11.0223 12.1525 10.8726 11.7883L10.4096 10.655C10.3279 10.4661 10.1781 10.3177 9.98745 10.2367L8.84362 9.77803C8.47596 9.62963 8.47596 9.10346 8.84362 8.95506L9.98745 8.49635C10.1781 8.4154 10.3279 8.26699 10.4096 8.07811L10.8726 6.94483C11.0223 6.58056 11.5534 6.58056 11.7032 6.94483Z" fill="currentColor"></path>
+                </svg>
+                <a href="https://about.gitlab.com/gitlab-duo/" class="more">
+                  <div class="text">
+                    AI-powered workflows with GitLab Duo
+                  </div>
+                  <div class="arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path></svg>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" fill="currentColor" fill-opacity="0" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1740_6849)" stroke="currentColor" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round"><path d="M28.391 25.046a15.466 15.466 0 01-3.365 3.363l-2.49-1.162a2.384 2.384 0 00-3.228 1.338l-.94 2.585a15.41 15.41 0 01-4.755 0l-.94-2.585a2.388 2.388 0 00-3.23-1.338L6.952 28.41a15.519 15.519 0 01-3.362-3.363l1.161-2.492a2.368 2.368 0 00-1.337-3.229l-2.586-.94a15.383 15.383 0 010-4.755l2.586-.94A2.386 2.386 0 004.75 9.46l-.32-.717m-.841-1.771a15.47 15.47 0 013.219-3.26.32.32 0 01.32-.03l2.329 1.089a2.37 2.37 0 003.228-1.338l.94-2.588a15.383 15.383 0 014.755 0l.941 2.588a2.371 2.371 0 003.228 1.338l2.49-1.165a15.408 15.408 0 013.353 3.366l-1.165 2.49a2.371 2.371 0 001.337 3.228l2.589.94a15.41 15.41 0 010 4.755l-2.588.94a2.386 2.386 0 00-1.338 3.229l.387.774"></path><path d="M11.662 18.21L9.44 15.986l2.222-2.222m8.686 0l2.224 2.222-2.224 2.224m-3.184-5.617l-2.32 6.831"></path></g><defs><clipPath id="clip0_1740_6849"><path fill="#fff" d="M0 0h31.995v31.995H0z"></path></clipPath></defs>
+                </svg>
+                <a href="https://about.gitlab.com/solutions/source-code-management/" class="more">
+                  <div class="text">
+                    Source code management
+                  </div>
+                  <div class="arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" fill="currentColor" fill-opacity="0" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_7608_14887)" stroke="currentColor" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M7.602 16.718a8.396 8.396 0 1116.792 0 8.396 8.396 0 01-16.792 0z"></path><path d="M15.998 3.686a13.035 13.035 0 015.168 24.998m-5.168 1.065a13.034 13.034 0 01-5.074-25.04"></path><path d="M17.163 1.36l-2.327 2.33 2.327 2.33m-2.327 26.064l2.327-2.33-2.327-2.33m-2.026-8.918l-1.804-1.804 1.805-1.808m7.059 0l1.804 1.808-1.804 1.804m-2.589-4.562l-1.884 5.548"></path></g><defs><clipPath id="clip0_7608_14887"><path fill="#fff" transform="translate(0 .72)" d="M0 0h31.995v31.995H0z"></path></clipPath></defs>
+                </svg>
+                <a href="https://about.gitlab.com/solutions/delivery-automation/" class="more">
+                  <div class="text">
+                    Automated software delivery
+                  </div>
+                  <div class="arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="devsecops__content-right">
+            <div class="code-container">
+              <ul class="code__tab">
+                <li>
+                  translate.py
+                </li>
+                <li>
+                  get_unique_int.go
+                </li>
+                <li>
+                  numbersArray.js
+                </li>
+              </ul>
+              <div class="code__code">
+                <div class="code__editor">
+                  <div class="code__lines">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                    <p>11</p>
+                    <p>12</p>
+                  </div>
+                  <div class="code__comment">
+                    <p># Translating words from English to other languages</p>
+                  </div>
+                  <div>
+                    <div>languages <p style="display: inline; color: #e373ff;">=</p> <p style="display: inline; color: #ff9f69;">&lbrace;</p></div>
+                    <div>&nbsp&nbsp&nbsp&nbsp'en': <p style="display: inline; color: #ff9f69;">&lbrace;</p></div>
+                    <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'hello': 'Hello',</div>
+                    <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'goodbye': 'Goodbye'</div>
+                    <div>&nbsp&nbsp&nbsp&nbsp<p style="display: inline; color: #ff9f69;">&rbrace;</p>,</div>
+                    <div>&nbsp&nbsp&nbsp&nbsp'es': <p style="display: inline; color: #ff9f69;">&lbrace;</p></div>
+                    <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'hello': 'Hola',</div>
+                    <div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'goodbye': 'Adiós'</div>
+                    <div>&nbsp&nbsp&nbsp&nbsp<p style="display: inline; color: #ff9f69;">&rbrace;</p></div>
+                    <div><p style="display: inline; color: #ff9f69;">&rbrace;</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="devsecops__security devsecops__card">
           <div class="devsecops__content-left">
             <p>Manage threat vectors and ensure adherence to compliance standards, without compromising speed.</p>
             <ul class="links">
@@ -712,6 +823,74 @@
           </div>
           <div class="devsecops__content-right">
             <img src="https://images.ctfassets.net/xz1dnu24egyd/7CQ0hSlvDwRqjFcOVkyURS/17ed8f692247439b735210df0e15ef15/security.svg" alt="DevSecOps Security">
+          </div>
+        </div>
+        <div class="devsecops__operations devsecops__card">
+          <div class="devsecops__content-left">
+            <p>Automate software deployment and optimize processes, whatever your environment: cloud native, multi-cloud, or legacy.</p>
+            <ul class="links">
+              <li>
+                <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path d="M12.37,3.91c-.81,.24-1.6,.57-2.34,.96l-3.13-2.41L2.47,6.9l2.41,3.13c-.4,.74-.72,1.52-.96,2.33l-3.92,.51v6.27l3.92,.51c.24,.81,.57,1.59,.96,2.33l-2.41,3.13,4.43,4.43,3.13-2.41c.74,.4,1.53,.72,2.34,.97l.71,3.91h2.92V0h-2.92l-.71,3.91Zm2.63,16.87c-2.22-.46-3.89-2.43-3.89-4.79s1.67-4.33,3.89-4.79v9.58ZM13.92,1h1.08V10.19c-2.77,.48-4.89,2.9-4.89,5.81s2.12,5.33,4.89,5.81v9.19h-1.08l-.67-3.71-.3-.08c-.95-.26-1.86-.64-2.71-1.12l-.29-.17-2.96,2.28-3.19-3.19,2.28-2.96-.17-.29c-.48-.84-.86-1.75-1.12-2.71l-.09-.32-3.7-.48v-4.51l3.7-.48,.09-.32c.26-.95,.64-1.87,1.12-2.71l.17-.29-2.28-2.96,3.19-3.19,2.96,2.28,.29-.17c.84-.48,1.75-.86,2.7-1.12l.3-.08,.68-3.71Z" fill="currentColor"></path><path d="M20,6h5V1h-5V6Zm1-4h3v3h-3V2Z" fill="currentColor"></path><path d="M27,8v5h5v-5h-5Zm4,4h-3v-3h3v3Z" fill="currentColor"></path><path d="M27,24h5v-5h-5v5Zm1-4h3v3h-3v-3Z" fill="currentColor"></path><path d="M24,13h-5v5h5v-5Zm-1,4h-3v-3h3v3Z" fill="currentColor"></path><path d="M20,31h5v-5h-5v5Zm1-4h3v3h-3v-3Z" fill="currentColor"></path>
+                </svg>
+                <a href="https://about.gitlab.com/solutions/gitops/" class="more">
+                  <div class="text">
+                    GitOps and infrastructure as code
+                  </div>
+                  <div class="arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path></svg>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <svg viewBox="0 0 32 32" fill="currentColor" fill-opacity="0" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_7608_14887)" stroke="currentColor" stroke-width="1.28" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M7.602 16.718a8.396 8.396 0 1116.792 0 8.396 8.396 0 01-16.792 0z"></path><path d="M15.998 3.686a13.035 13.035 0 015.168 24.998m-5.168 1.065a13.034 13.034 0 01-5.074-25.04"></path><path d="M17.163 1.36l-2.327 2.33 2.327 2.33m-2.327 26.064l2.327-2.33-2.327-2.33m-2.026-8.918l-1.804-1.804 1.805-1.808m7.059 0l1.804 1.808-1.804 1.804m-2.589-4.562l-1.884 5.548"></path></g><defs><clipPath id="clip0_7608_14887"><path fill="#fff" transform="translate(0 .72)" d="M0 0h31.995v31.995H0z"></path></clipPath></defs>
+                </svg>
+                <a href="https://about.gitlab.com/solutions/delivery-automation/" class="more">
+                  <div class="text">
+                    Automated software delivery
+                  </div>
+                  <div class="arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <svg width="34" height="32" viewBox="0 0 34 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.61342 0.405681L6.29342 2.08118C6.40008 2.35823 6.62675 2.58251 6.90675 2.68805L8.60008 3.36089C9.14675 3.57198 9.14675 4.35036 8.60008 4.56144L6.90675 5.23428C6.62675 5.33982 6.40008 5.5641 6.29342 5.84115L5.61342 7.51665C5.40008 8.05756 4.61342 8.05756 4.40008 7.51665L3.72008 5.84115C3.61342 5.5641 3.38675 5.33982 3.10675 5.23428L1.41342 4.56144C0.866751 4.35036 0.866751 3.57198 1.41342 3.36089L3.10675 2.68805C3.38675 2.58251 3.61342 2.35823 3.72008 2.08118L4.40008 0.405681C4.61342 -0.135227 5.40008 -0.135227 5.61342 0.405681Z" fill="currentColor"></path> <path d="M12.0666 6.87018L12.5199 7.97839C12.5999 8.16309 12.7466 8.30821 12.9332 8.38737L14.0532 8.83592C14.4132 8.98105 14.4132 9.49557 14.0532 9.64069L12.9332 10.0892C12.7466 10.1684 12.5999 10.3135 12.5199 10.4982L12.0666 11.6064C11.9199 11.9626 11.3999 11.9626 11.2532 11.6064L10.7999 10.4982C10.7199 10.3135 10.5732 10.1684 10.3866 10.0892L9.26658 9.64069C8.90658 9.49557 8.90658 8.98105 9.26658 8.83592L10.3866 8.38737C10.5732 8.30821 10.7199 8.16309 10.7999 7.97839L11.2532 6.87018C11.3999 6.51398 11.9199 6.51398 12.0666 6.87018Z" fill="currentColor"></path> <path fill-opacity="0" d="M9.6665 21.765H1.6665V31H9.6665V21.765Z" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> <path fill-opacity="0" d="M21 16.4878H13V31H21V16.4878Z" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> <path fill-opacity="0" d="M24.3335 7.25281H32.3335V27.0421C32.3335 29.2322 30.5468 31 28.3335 31H24.3335V7.25281Z" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> <path fill-opacity="0" d="M14.7598 6.96254L20.8931 1.31598H32.9998" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> <path fill-opacity="0" d="M1 15.34H5.66667L8.14667 13.0577" stroke="currentColor" stroke-width="1.45" stroke-miterlimit="10"></path> 
+                </svg>
+                <a href="https://about.gitlab.com/solutions/value-stream-management/" class="more">
+                  <div class="text">
+                    Value stream management
+                  </div>
+                  <div class="arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <svg width="34" height="41" viewBox="0 0 34 41" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <g id="clipboard-data" clip-path="url(#clip0_0_1)"> <path id="Vector" d="M25.4211 4.36865H33V36.7371C33 38.3939 31.6569 39.7371 30 39.7371C20.3333 39.7371 10.6667 39.7371 1 39.7371V4.36865H3.52632" stroke="currentColor" fill="none" stroke-miterlimit="10"></path> <path id="Vector_2" d="M24.5788 1H9.4209V7.73684H24.5788V1Z" stroke="currentColor" fill="none" stroke-miterlimit="10"></path> <path id="Vector_3" d="M15.3159 14.4736H26.2633" stroke="currentColor" stroke-miterlimit="10"></path> <path id="Vector_4" d="M8.5791 14.4736H11.9475" stroke="currentColor" stroke-miterlimit="10"></path> <path id="Vector_5" d="M26.263 31.316H9.4209V20.3687" stroke="currentColor" fill="none" stroke-miterlimit="10"></path> <path id="Vector_6" d="M12.7896 26.2631L16.158 21.2104L21.2106 26.2631L24.579 21.2104" stroke="currentColor" fill="none" stroke-miterlimit="10"></path> </g> <defs> <clipPath id="clip0_0_1"> <rect width="34" height="41" fill="currentColor"></rect> </clipPath> </defs>
+                </svg>
+                <a href="https://about.gitlab.com/solutions/analytics-and-insights/" class="more">
+                  <div class="text">
+                    Analytics and Insights
+                  </div>
+                  <div class="arrow">
+                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.159 10.72a.75.75 0 101.06 1.06l3.25-3.25L15 8l-.53-.53-3.25-3.25a.75.75 0 00-1.061 1.06l1.97 1.97H1.75a.75.75 0 100 1.5h10.379l-1.97 1.97z"></path>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="devsecops__content-right">
+            <img src="https://images.ctfassets.net/xz1dnu24egyd/7m2OCfXXtU1EMtjghNlcMy/9e5978ee97220c4e8bd797bc9f615d45/operations.svg" alt="DevSecOps Operations">
           </div>
         </div>
       </div>

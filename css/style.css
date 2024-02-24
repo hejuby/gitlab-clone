@@ -657,6 +657,10 @@ section.devsecops .inner > p {
   transition: all .3s ease;
 }
 
+.devsecops__buttons button:focus {
+  outline: none;
+}
+
 .devsecops__buttons button:hover {
   background-color: #7759c2;
 }
@@ -666,9 +670,28 @@ section.devsecops .inner > p {
 }
 
 /* DEVSECOPS TABS */
-:is(.devsecops__security) {
+.devsecops__card {
   display: flex;
   gap: 32px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  width: 0;
+  height: 0;
+  transition: transform .5s linear, opacity .3s ease;
+}
+
+.devsecops__card.active {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+}
+
+.devsecops__card.active svg {
+  fill: currentColor;
+  color: inherit;
 }
 
 .devsecops__content-left {
@@ -710,6 +733,61 @@ section.devsecops .inner > p {
 
 .devsecops__content-right img {
   width: 100%;
+}
+
+.devsecops__content-right .code-container {
+  margin-top: 16px;
+  font-family: monospace;
+}
+
+.devsecops__content-right .code__tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px 0;
+  font-size: 16px;
+  line-height: 1.3;
+  background-color: #f2f1f5;
+  color: #171321;
+  border-radius: 8px 8px 0 0;
+}
+
+.devsecops__content-right .code__tab li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  padding: 8px 8px;
+  border-radius: 4px 4px 0 0;
+}
+
+.devsecops__content-right .code__tab li:first-of-type {
+  background-color: #fff;
+}
+
+.code__code {
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.code__editor {
+  background-color: #241e33;
+  border-radius: 4px;
+  padding: 16px 0 64px 24px;
+  position: relative;
+}
+
+.code__lines {
+  position: absolute;
+  left: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #6e7681;
+  line-height: 24px;
+}
+
+.code__comment {
+  color: #d1d0d3;
 }
 
 /* CASE STUDIES */
