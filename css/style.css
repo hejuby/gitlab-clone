@@ -1101,6 +1101,7 @@ section.get-started .inner {
   padding: 64px;
   position: relative;
   margin-top: -96px;
+  column-gap: 16px;
 }
 
 .get-started__title {
