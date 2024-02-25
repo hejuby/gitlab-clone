@@ -1,5 +1,6 @@
 # Gitlab 클론 코딩
 원본 사이트 : <a href="https://about.gitlab.com/" target="_blank">Gitlab</a>
+클론 사이트 : <a href="https://hejuby.github.io/gitlab-clone/" target="_blank">Gitlab Clone</a>
 
 ## 파일 구조
 ```
@@ -51,3 +52,4 @@ KDT8-M1
 1. 일부 요소에 시맨틱 태그를 적용하였으나 세부적인 부분으로 갈수록 사이트 구현에 급급해 태그 사용을 일관적으로 하지 못했습니다.
 2. 모듈화를 도입하지 못해 html 및 css 파일의 크기가 매우 커졌습니다.
 3. 반응형 브라우징 및 크로스 플랫폼 대응이 미흡하였습니다.
+4. CSS에서 중복되는 코드가 많은데 코드 재사용 부분에서 아쉬웠습니다.
