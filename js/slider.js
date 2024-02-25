@@ -1,6 +1,6 @@
 let target = 0;
 let current = 0;
-let ease = 0.075;
+let ease = 0.0825;
 let pressed = false;
 let mouseX = 0;
 
