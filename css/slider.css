@@ -156,13 +156,14 @@ section.slider .more {
   gap: 8px;
   align-items: center;
   position: absolute;
-  right: 92px;
+  right: 15%;
   bottom: 32px;
+  width: 30%;
 }
 
 .swiper-scrollbar-wrapper {
   position: relative;
-  width: 335px;
+  flex-grow: 1;
   height: 2px;
   background-color: #fff;
 }
