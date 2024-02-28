@@ -26,7 +26,7 @@ searchReset.addEventListener('click', () => {
 
 // DevSecOps
 const devOpsBtns = document.querySelectorAll('.devsecops__buttons > li > button');
-const devOpsCards = document.querySelectorAll('.devsecops__card');
+const devOpsCards = document.querySelectorAll('.devsecops__cards article');
 
 devOpsBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {

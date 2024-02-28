@@ -65,7 +65,7 @@
   border-radius: 90px;
 }
 
-:where(.feature-pills span) {
+:where(.feature-pills p) {
   font-size: 14px;
   line-height: 1.4;
 }
