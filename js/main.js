@@ -43,7 +43,7 @@ devOpsBtns.forEach((btn, index) => {
 
 // Case Studies
 const caseTabBtns = document.querySelectorAll('.case__tabs button');
-const caseContents = document.querySelectorAll('section.case-studies .inner > div');
+const caseContents = document.querySelectorAll('.case__contents article');
 
 caseTabBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {

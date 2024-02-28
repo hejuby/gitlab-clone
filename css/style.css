@@ -844,7 +844,7 @@ section.case-studies .inner {
 }
 
 /* CASE STUDY CASES */
-section.case-studies .inner > :not(.case__tabs) {
+.case__contents article {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -856,7 +856,7 @@ section.case-studies .inner > :not(.case__tabs) {
   transition: transform .5s linear, opacity .3s ease;
 }
 
-section.case-studies .inner > :not(.case__tabs).active {
+.case__contents article.active {
   visibility: visible;
   opacity: 1;
   width: 100%;
