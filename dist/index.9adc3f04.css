@@ -1,0 +1,183 @@
+section.slider {
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+section.slider h1 {
+  letter-spacing: -1.4px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+section.slider .btn {
+  display: inline-flex;
+}
+
+section.slider .more {
+  padding: 11px 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.swiper {
+  scrollbar-width: none;
+  width: 100%;
+  padding: 64px 96px;
+  overflow: auto;
+}
+
+.swiper::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-wrapper {
+  width: max-content;
+  height: 100%;
+  display: flex;
+}
+
+.swiper-slide:has([class^="slider__"]:not(.slider__hero-img)) {
+  max-width: 460px;
+}
+
+.swiper-slide:has(.hero-card):hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.swiper-slide:has(.slider__title) {
+  margin: 0 40px 0 64px;
+}
+
+.swiper-slide:has(.hero-card) {
+  background: linear-gradient(176deg, #ffffffbf, #fff6);
+  border-radius: 9px;
+  margin: 0 40px 32px 0;
+  transition: transform .3s;
+}
+
+.hero-card h2 {
+  letter-spacing: -.6px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+[class^="slider__"]:has( > a.hero-card) {
+  padding: 24px;
+}
+
+.slider__title h1 {
+  margin: 64px 40px 0 0;
+}
+
+.slider__title p {
+  margin: 16px 0;
+}
+
+.slider__title .btn {
+  margin: 24px 0;
+}
+
+:is(.slider__title, .hero__get-started) p {
+  font-size: 18px;
+}
+
+.hero-card img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  max-height: 260px;
+  margin-bottom: 32px;
+}
+
+.hero-card h2 {
+  margin-bottom: 106px;
+}
+
+.slider__code-suggestion p {
+  color: #fff;
+  box-sizing: content-box;
+  background-color: #7759c2;
+  border: 1px solid #7759c2;
+  border-radius: 90px;
+  margin-bottom: 8px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  display: inline-block;
+}
+
+.slider__code-suggestion h2 {
+  margin-bottom: 40px;
+}
+
+.slider__gitlab-duo h2 {
+  margin-bottom: 110px;
+}
+
+.slider__hero-img {
+  max-width: 1170px;
+  margin-left: 64px;
+  display: flex;
+}
+
+.hero__get-started {
+  flex: 0 0 585px;
+  margin-top: 64px;
+}
+
+.hero__img {
+  flex: 0 0 585px;
+}
+
+.hero__get-started p {
+  margin: 16px 0;
+}
+
+.slider__hero-img .get-started__btns {
+  gap: 16px;
+  margin-top: 32px;
+  display: flex;
+}
+
+.slider__navigation {
+  align-items: center;
+  gap: 8px;
+  width: 30%;
+  display: flex;
+  position: absolute;
+  bottom: 32px;
+  right: 15%;
+}
+
+.swiper-scrollbar-wrapper {
+  background-color: #fff;
+  flex-grow: 1;
+  height: 2px;
+  position: relative;
+}
+
+.swiper-scrollbar {
+  transform-origin: 0;
+  background-color: #171717;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.swiper-button-prev.disabled {
+  fill: #fff;
+}
+
+[class^="swiper-button"] svg {
+  z-index: -1;
+  width: 16px;
+  height: 16px;
+}
+
+/*# sourceMappingURL=index.9adc3f04.css.map */

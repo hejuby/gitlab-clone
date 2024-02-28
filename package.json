@@ -1,0 +1,11 @@
+{
+  "name": "kdt8-m1",
+  "source": "./index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  }
+}

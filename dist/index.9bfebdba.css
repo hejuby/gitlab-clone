@@ -1,0 +1,60 @@
+body {
+  color: #171321;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+:where(a, img, span, button, input, svg) {
+  display: block;
+}
+
+:where(a, button) {
+  cursor: pointer;
+}
+
+:where(button, input):focus {
+  outline: none;
+}
+
+:where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(strong) {
+  font-weight: inherit;
+}
+
+:where(cite) {
+  font-style: inherit;
+}
+
+:where(button) {
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+:where([hidden]) {
+  visibility: hidden;
+}
+
+:where(.hidden) {
+  display: none;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p) > a {
+  display: inline;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p) > a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=index.9bfebdba.css.map */
