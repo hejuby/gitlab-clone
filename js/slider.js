@@ -47,11 +47,11 @@ slider.addEventListener('mousedown', e => {
   slider.style.cursor = 'grabbing';
 });
 
-slider.addEventListener('mouseleave', e => {
+slider.addEventListener('mouseleave', () => {
   pressed = false;
 });
 
-slider.addEventListener('mouseup', e => {
+slider.addEventListener('mouseup', () => {
   pressed = false;
   slider.style.cursor = 'grab';
   heroCards.forEach((card) => {
@@ -59,7 +59,7 @@ slider.addEventListener('mouseup', e => {
   });
 });
 
-slider.addEventListener('mouseenter', e => {
+slider.addEventListener('mouseenter', () => {
   slider.style.cursor = 'grab';
 });
 

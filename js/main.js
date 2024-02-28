@@ -19,7 +19,7 @@ searchInput.addEventListener('input', e => {
   }
 });
 
-searchReset.addEventListener('click', e => {
+searchReset.addEventListener('click', () => {
   searchInput.value = null;
   searchReset.classList.add('hidden');
 });
