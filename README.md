@@ -9,14 +9,24 @@ KDT8-M1
 ┣ README.md
 ┣ images
 ┗ css
-  ┣ common.css
-  ┣ reset.css
-  ┣ slider.css
-  ┗ style.css
+  ┣ _case-studies.scss
+  ┣ _common.scss
+  ┣ _devsecops.scss
+  ┣ _footer.scss
+  ┣ _get-started.scss
+  ┣ _header.scss
+  ┣ _main.scss
+  ┣ _platform.scss
+  ┣ _recognition.scss
+  ┣ _reset.scss
+  ┣ _saving.scss
+  ┣ _slider.scss
+  ┗ style.scss
 ┗ js
   ┣ main.js
   ┗ slider.js
 ```
+Bundler: Parcel, Deploy: Cloudflare Pages
 
 ## 주요 구현 기능
 1. ```position: sticky;```를 사용해 최상단 광고배너 및 그 아래 출력되는 헤더를 구현하였습니다.
