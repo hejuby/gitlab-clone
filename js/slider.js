@@ -6,7 +6,6 @@ let mouseX = 0;
 
 const slider = document.querySelector('.swiper');
 const sliderWrapper = document.querySelector('.swiper-wrapper');
-const scrollbarWrapper = document.querySelector('.swiper-scrollbar-wrapper');
 const prevBtn = document.querySelector('.swiper-button-prev');
 const nextBtn = document.querySelector('.swiper-button-next');
 const heroCards = sliderWrapper.querySelectorAll('a.hero-card');
