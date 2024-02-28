@@ -7,6 +7,7 @@
     "push": "git push origin KDT8_ByeonHeeJun && git push upload KDT8_ByeonHeeJun"
   },
   "devDependencies": {
+    "node-sass": "^9.0.0",
     "parcel": "latest"
   }
 }

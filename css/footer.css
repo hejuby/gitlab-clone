@@ -1,0 +1,136 @@
+/* FOOTER */
+footer {
+  background-color: #171321;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 72px;
+}
+
+.footer__list {
+  display: inline-grid;
+  grid-template-columns: repeat(6, 160px);
+  column-gap: 42px;
+}
+
+.footer__list a:hover {
+  text-decoration: underline;
+}
+
+.footer__list > li {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__list .logo {
+  flex-direction: row;
+  gap: 0;
+}
+
+.footer__list .title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer__list li.platform .title:nth-of-type(2) {
+  margin-top: 8px;
+}
+
+.footer__footer {
+  padding: 128px 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.footer__footer .language-and-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__footer .language {
+  font-size: 16px;
+  position: relative;
+}
+
+.footer__footer .language__button {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__footer .language__button svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+.footer__footer .language__form {
+  position: absolute;
+  top: -168px;
+  font-size: 20px;
+  color: #171321;
+  background-color: #fff;
+  border: 1px solid #d1d0d3;
+  border-radius: 4px;
+  min-width: 345px;
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s ease-in-out;
+  display: block;
+}
+
+.language__form.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.footer__footer .language__form button {
+  position: relative;
+  padding: 8px 16px;
+  width: 100%;
+  text-align: start;
+  transition: background-color .3s ease-in-out;
+}
+
+.footer__footer .language__form button:hover {
+  background-color: #e8e7eb;
+}
+
+.footer__footer .language__form svg {
+  position: absolute;
+  right: 18px;
+  top: 8px;
+}
+
+.footer__footer .links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer__footer .links svg {
+  width: 24px;
+  height: 24px;
+  transition: .5s;
+}
+
+.footer__footer .links a svg:hover {
+  color: #7759c2;
+}
+
+.footer__horizontal-bar {
+  height: 1px;
+  background-color: #fff;
+}
+
+.footer__footer .license {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__footer .license__links {
+  display: flex;
+  gap: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}

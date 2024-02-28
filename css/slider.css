@@ -185,3 +185,29 @@ section.slider .more {
   height: 16px;
   z-index: -1;
 }
+
+/* BRANDS */
+.brands .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 auto 112px auto;
+}
+
+.brands .inner :is(.tmobile, .goldman-sachs) {
+  flex: 0 1 90px;
+}
+
+.brands .inner :is(.airbus, .carfax, .nvidia, .ubs) {
+  flex: 0 1 110px;
+}
+
+.brands .inner .lockheed-martin {
+  flex: 0 1 170px;
+}
+
+.brands .inner img {
+  filter: grayscale(100%);
+  position: relative;
+}

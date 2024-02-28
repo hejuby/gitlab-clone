@@ -1,0 +1,72 @@
+/* PLATFORM */
+section.platform {
+  line-height: 1.2;
+  position: relative;
+}
+
+.platform__top {
+  display: flex;
+  gap: 96px;
+}
+
+.platform__title {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-self: center;
+}
+
+.platform__hero {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.platform__title h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.platform__title p {
+  font-size: 20px;
+  margin: 24px 0;
+}
+
+.platform__buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.platform__buttons .more {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.platform__buttons .more svg {
+  width: 20px;
+  height: 20px;
+}
+
+.platform__bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  column-gap: 32px;
+  margin: 64px 0 160px;
+}
+
+.platform__bottom h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.platform__bottom li > :is(svg, h4) {
+  margin-bottom: 8px;
+}
+
+.platform__bottom li svg {
+  width: 32px;
+  height: 32px;
+}
+
+.platform__bottom a {
+  color: #7759c2;
+}
