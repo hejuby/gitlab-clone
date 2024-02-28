@@ -1,6 +1,6 @@
 # Gitlab 클론 코딩
 - 원본 사이트 : <a href="https://about.gitlab.com/" target="_blank">Gitlab</a>
-- 클론 사이트 : <a href="https://hejuby.github.io/gitlab-clone/" target="_blank">Gitlab Clone</a>
+- 클론 사이트 : <a href="https://gitlab-clone.pages.dev/" target="_blank">Gitlab Clone</a>
 
 ## 파일 구조
 ```
