@@ -3,7 +3,9 @@
   "source": "./index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "push": "git push origin KDT8_ByeonHeeJun && git push upload KDT8_ByeonHeeJun",
+    "deploy": "git subtree push --prefix dist upload gh-pages"
   },
   "devDependencies": {
     "parcel": "latest"
