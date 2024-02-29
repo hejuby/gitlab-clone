@@ -13,8 +13,8 @@ searchClose.addEventListener('click', () => {
   searchEl.toggleAttribute('hidden');
 });
 
-searchInput.addEventListener('input', e => {
-  if (e.target.value) {
+searchInput.addEventListener('input', event => {
+  if (event.target.value) {
     searchReset.classList.remove('hidden');
   }
 });
