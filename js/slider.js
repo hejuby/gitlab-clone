@@ -10,7 +10,7 @@ const prevBtn = document.querySelector('.swiper-button-prev');
 const nextBtn = document.querySelector('.swiper-button-next');
 const heroCards = sliderWrapper.querySelectorAll('a.hero-card');
 
-let maxScroll = sliderWrapper.offsetWidth - window.innerWidth;
+let maxScroll = sliderWrapper.offsetWidth - window.innerWidth + 96 * 2;
 
 const lerp = (start, end, factor) => {
   return start + (end - start) * factor;
