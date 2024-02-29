@@ -3,7 +3,7 @@
   "source": "./index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
+    "build": "parcel build --no-optimize",
     "push": "git push origin KDT8_ByeonHeeJun && git push upload KDT8_ByeonHeeJun"
   },
   "devDependencies": {
