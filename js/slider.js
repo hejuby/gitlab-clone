@@ -30,8 +30,8 @@ const update = () => {
   requestAnimationFrame(update);
 };
 
-slider.addEventListener('wheel', event => {
-  if (Math.abs(e.deltaX) > 10) target += event.deltaX;
+slider.addEventListener('wheel', e => {
+  if (Math.abs(e.deltaX) > 10) target += e.deltaX;
 
   target = Math.max(0, target);
   target = Math.min(target, maxScroll);
@@ -40,9 +40,9 @@ slider.addEventListener('wheel', event => {
   else prevBtn.classList.add('disabled');
 });
 
-slider.addEventListener('mousedown', event => {
+slider.addEventListener('mousedown', e => {
   pressed = true;
-  mouseX = event.clientX;
+  mouseX = e.clientX;
   slider.style.cursor = 'grabbing';
 });
 
@@ -62,13 +62,13 @@ slider.addEventListener('mouseenter', () => {
   slider.style.cursor = 'grab';
 });
 
-slider.addEventListener('mousemove', event => {
+slider.addEventListener('mousemove', e => {
   if (pressed) {
     heroCards.forEach((card) => {
       card.style.pointerEvents = 'none';
     });
-    slider.scrollLeft += mouseX - event.clientX;
-    target += mouseX - event.clientX;
+    slider.scrollLeft += mouseX - e.clientX;
+    target += mouseX - e.clientX;
 
     target = Math.max(0, target);
     target = Math.min(maxScroll, target);
@@ -76,7 +76,7 @@ slider.addEventListener('mousemove', event => {
     if (target) prevBtn.classList.remove('disabled');
     else prevBtn.classList.add('disabled');
 
-    mouseX = event.clientX;
+    mouseX = e.clientX;
   }
 });
 
